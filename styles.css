@@ -11,7 +11,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #214c74;
+    background: #281055;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,14 +70,30 @@
 .banner header .logo:hover{
     font-size: 27px;
 }
-.banner header .toggle{
+
+header ul,li,a{
+    list-style: none;
+    z-index: 100000;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    transition: 0.2s;
+}
+
+header a:hover{
+    font-size: 20px;
+    color:grey;
+}
+/* .banner header .toggle{
     position: relative;
     width: 36px;
     height: 28px;
     background: url(img/toggle.png);
     background-size: cover;
     cursor: pointer;
-}
+} */
 
 /*  About */
 
@@ -88,7 +104,7 @@
 }
 
 .about .contentBx{
-    background: #19557e;
+    background: #32165f;
     padding: 100px;
     width: 50%;
 }
@@ -108,7 +124,7 @@
     letter-spacing: 1px;
 }
 .about .imgBx{
-    background: url(img/tucan.jpg);
+    background: url(img/7247.jpg);
     width: 50%;
     background-size: cover;
     background-position: center;
@@ -147,7 +163,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
+
+.services .container .serviceBx:hover{
+
+    border-top: 5px solid red;
+}
+
 
 .services .container .serviceBx img{
     max-width: 150px;
@@ -156,6 +179,7 @@
 
 .services .container .serviceBx img:hover{
     max-width: 180px;
+
 }
 
 .services .container .serviceBx h2{
